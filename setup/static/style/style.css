@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: rgb(40, 37, 66);
+}
+
+.Main {
+    margin-top: calc(18vh + 2px);
+}
+
+.Header {
+    top: 0;
+    padding: auto;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    background: #0b182c;
+    border-bottom: 3px solid rgb(0, 0, 126);
+}
+
+header.Header > div {
+    margin: auto;
+}
+
+h1 {
+    color: #e5f1ff;
+    font-size: 24px;
+}
+
+img.logo-spotify {
+    height: 48px;
+}
+
+input.SearchBar {
+    border: 1px solid rgb(0, 0, 63);
+    outline: 1px solid rgb(0, 0, 126);
+    width: 25vw;
+    height: 30px;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.nav {
+    top: calc(3px + 15vh);
+    left: 3vw;
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    position: fixed;
+    border: 3px solid rgb(19, 0, 129);
+    border-left: 0;
+    background-color: #0b182c;
+}
+
+ul.navUl {
+    display: grid;
+    grid-template-rows: 50% 50% 50% 50%;
+    margin: 30% 0 0 30%;
+}
+
+span.fa {
+    color: #e5f1ff;
+}
+
+a > span.fa {
+    margin-left: 10px;
+}
+
+span.marginSpan {
+    font-family: 'DM Sans', sans-serif;
+    margin-left: 10px;
+}
+
+.Footer {
+    bottom: 0;
+    width: 100%;
+    background: #0b182c;
+}

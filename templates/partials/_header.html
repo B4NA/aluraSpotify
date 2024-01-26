@@ -1,0 +1,11 @@
+{% load static %}
+<header class="Header">
+    <div>
+        <a href="{% url 'index' %}"><img class='logo-spotify' src="{% static '/assets/icons/logo-spotify.png' %}"></a>
+    </div>
+    <div class="search">
+        <form action="{% url 'index' %}">
+            <span class="fa fa-search" \><input class="SearchBar" name="SearchBar" type="text" placeholder="Pesquisar">
+        </form>
+    </div>
+</header>
