@@ -1,11 +1,39 @@
 {% load static %}
 <div class="nav">
-    <nav>
-        <ul class="navUl">
-            <li><a href="{% url 'index' %}"><span class="fa fa-home" \><span class="marginSpan">Início</span></a></li>
-            <li><a href="{% url 'index' %}"><span class="fa fa-music" \><span class="marginSpan">Biblioteca</span></a></li>
-            <li><a href="{% url 'login' %}"><span class="fa fa-key" \><span class="marginSpan">Entrar</span></a></li>
-            <li><a href="{% url 'logon' %}"><span class="fa fa-pen" \><span class="marginSpan">Cadastrar</span></a></li>
+    <nav class="navigate">
+        <ul>
+            <li><a href="{% url 'index' %}"><span class="fa fa-home" \><span class="margin__span">Início</span></a></li>
+            <li><a href="{% url 'login' %}"><span class="fa fa-key" \><span class="margin__span">Entrar</span></a></li>
+            <li><a href="{% url 'logon' %}"><span class="fa fa-pen" \><span class="margin__span">Cadastrar</span></a></li>
         </ul>
     </nav>
+</div>
+<div class="library nav">
+    <nav class="library__nav navigate">
+        <button class="library__button"><span class="fa fa-book" \><span class="margin__span">Biblioteca</span></button>
+        <span class="fa fa-plus" \>
+    </nav>
+    <section class="section-playlist">
+        <span class="text title">Crie sua primeira Playlist.</span>
+        <span class="text subtitle">É fácil, deixa eu te ajudar.</span>
+        <button class="section-playlist__button">
+            <span>Adicionar Playlist</span>
+        </button>
+    </section>
+    <div class="cookies">
+        <a href="">cookies</a>
+    </div>
+    <div class="languages">
+        <button>
+            <a href="{% url 'index' %}"><span class="fa fa-globe" \></a>
+        </button>
+        <select class="languages__select">
+            <option value="Portuguese">Português</option>
+            <option value="English">English</option>
+            <option value="Spanish">Español</option>
+            <option value="German">Deutsch</option>
+            <option value="Chinese">中文</option>
+            <option value="Japanese">日本語</option>
+        </select>
+    </div>
 </div>
