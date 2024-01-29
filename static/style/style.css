@@ -19,7 +19,7 @@ body {
     height: 18vh;
     position: fixed;
     display: flex;
-    background: #0b182c;
+    background: var(--secondary-color);
     border-bottom: 3px solid rgb(0, 0, 126);
 }
 

@@ -4,6 +4,12 @@
         <a href="{% url 'index' %}"><img class='logo-spotify' src="{% static '/assets/icons/logo-spotify.png' %}"></a>
     </div>
     <div class="search">
+        <button class="arrow">
+            <img src="{% static '/assets/icons/small-left.png' %}">
+        </button>
+        <button class="arrow">
+            <img class="flip" src="{% static '/assets/icons/small-left.png' %}">
+        </button>
         <form action="{% url 'index' %}">
             <button class="search__button"><span class="fa fa-search" \></button><input class="search__input" name="search__input" type="search" placeholder="Pesquisar">
         </form>

@@ -4,16 +4,8 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
-    background: #07101d;
-}
-
-.main {
-    top: calc(15vh + 3px);
-    left: calc(23vw + 3px);
-    width: calc(100% - 31vw - 3px);
-    height: 85vh;
-    position: fixed;
+    font-family: var(--font-dm-sans);
+    background: var(--primary-color);
 }
 
 .header {
@@ -23,8 +15,8 @@ body {
     height: 15vh;
     position: fixed;
     display: flex;
-    background: #0b182c;
-    border-bottom: 3px solid rgb(19, 0, 129);
+    background: var(--secondary-color);
+    border-bottom: 3px solid var(--border-color);
 }
 
 header.header div {
@@ -40,6 +32,34 @@ img.logo-spotify {
     height: 48px;
 }
 
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    aspect-ratio: 1 \ 1;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: auto 0.8rem auto;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background: rgb(0, 0, 10);
+}
+
+.arrow img {
+    aspect-ratio: 1 / 1;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.search form {
+    margin: 0 0 0 1rem;
+}
+
 .search__button {
     background: 0;
 }
@@ -52,6 +72,8 @@ img.logo-spotify {
     border-radius: 8px;
     margin-left: 10px;
     padding-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .nav {
@@ -61,10 +83,10 @@ img.logo-spotify {
     height: 20vh;
     display: flex;
     position: fixed;
-    border: 3px solid rgb(19, 0, 129);
+    border: 3px solid var(--border-color);
     border-left: 0;
     border-radius: 0 0 40px 0;
-    background-color: #0b182c;
+    background-color: var(--secondary-color);
 }
 
 .navigate {
@@ -88,7 +110,7 @@ span.fa {
 }
 
 .margin__span {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-dm-sans);
     font-size: 1vw;
     margin-left: 10px;
 }
@@ -119,11 +141,12 @@ span.fa {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 10%;
+    gap: auto;
     margin-inline: auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: #07101d;
+    font-size: 1.2vw;
+    background-color: var(--primary-color);
 }
 
 .text {
@@ -137,6 +160,7 @@ span.fa {
     border-radius: 10px;
     font-weight: 400;
     background-color: rgb(0, 0, 10);
+    font-size: 1.2vw;
     color: #e5f1ff;
 }
 
@@ -195,7 +219,7 @@ span.fa {
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    border-top: 3px solid rgb(19, 0, 129);
+    border-top: 3px solid var(--border-color);
     background: repeating-linear-gradient(to right, rgb(0, 17, 255), black);
 }
 
@@ -221,10 +245,10 @@ span.fa {
     height: 50%;
     margin: auto 3% auto auto;
     padding: 5px;
-    border: 1px solid rgb(19, 0, 129);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     background-color: #fff;
     font-size: 1.2vw;
     font-weight: 700;
-    color: rgb(19, 0, 129);
+    color: var(--border-color);
 }
