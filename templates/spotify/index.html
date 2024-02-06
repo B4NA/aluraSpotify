@@ -1,11 +1,20 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}
-<div>
-    <h1 class="main__title">{{a}}</h1>
-    <h1 class="main__subtitle">Navegar por todas as seções</h1>
-    <div class="section-categories">
-        
+<div class="main-container">
+    <div class="result-main" id="result-main">
+        <h1 class="main__title">{{a}}</h1>
+        <h1 class="main__subtitle">Navegar por todas as seções</h1>
+        <div class="offer__scroll-container">
+            <div class="offer__list">
+                <section class="offer__list-item">
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="result-search" class="hidden">
+        <div class="grid-container">
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<div class="main-container">
+    <div id="result-search">
+        <div class="grid-container">
+            {% for artists in artist %}
+            <div class="artist-card" id="{{artists.id}}">
+                <div class="card-img">
+                    <img src="{{artists.urlImg}}" id="artist-img" class="artist-img" />
+                    <div class="play">
+                        <span class="fa fa-solid fa-play"></span>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <a title="Foo Fighters" class="vst" href=""></a>
+                    <span class="artist-name" id="artist-name">{{artists.name}}</span>
+                    <span class="artist-categorie">Artista - {{artists.genre}}</span>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

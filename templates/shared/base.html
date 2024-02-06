@@ -7,8 +7,6 @@
     {% include 'partials/_head.html' %}
 </head>
 
-<script type="text/javascript" src="{% static '/javascript/library.js' %}"></script>
-
 <body>
     {% include 'partials/_header.html' %}
     {% include 'partials/_nav.html' %}
@@ -16,5 +14,6 @@
         {% block content %}{% endblock %}
     </main>
     {% include 'partials/_footer.html' %}
+    <script type="text/javascript" src="{% static '/javascript/main.js' %}"></script>
 </body>
 </html>
