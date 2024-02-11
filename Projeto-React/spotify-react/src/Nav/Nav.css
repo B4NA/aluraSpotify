@@ -1,0 +1,141 @@
+.nav {
+    top: 15vh;
+    left: 3vw;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    position: fixed;
+    border: 3px solid var(--border-color);
+    border-left: 0;
+    border-radius: 0 0 40px 0;
+    background-color: var(--secondary-color);
+}
+
+.navigate {
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.navigate ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigate ul li {
+    margin: 5% 0;
+}
+
+.navigate ul li a {
+    text-decoration: none;
+}
+
+span.fa {
+    color: #e5f1ff;
+}
+
+.margin__span {
+    font-family: var(--font-dm-sans);
+    font-size: 1vw;
+    font-weight: 700;
+    color: #e5f1ff;
+    margin-left: 10px;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: calc(3px + 35vh);
+    height: calc(55vh - 9px);
+    border-radius: 0 40px 0 0;
+}
+
+.library__nav {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.library__button {
+    background: 0;
+}
+
+.section-playlist {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: auto;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    background-color: var(--primary-color);
+}
+
+.text {
+    color: #e5f1ff;
+}
+
+.section-playlist__button {
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    border: 1px solid #e5f1ff;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: rgb(0, 0, 10);
+    font-size: 1.2vw;
+    color: #e5f1ff;
+}
+
+.cookies a {
+    margin: 0 0 0 10%;
+    text-decoration-line: none;
+    color: aquamarine;
+    font-size: 1vw;
+}
+
+.cookies a:hover {
+    text-decoration-line: underline;
+    color: aqua
+}
+
+.cookies a:visited {
+    color: aquamarine;
+}
+
+.cookies a:visited:hover {
+    text-decoration-line: underline;
+    color: aqua
+}
+
+.languages {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 15% auto;
+}
+
+.languages button {
+    height: fit-content;
+    margin: auto 0 auto 0;
+    background: 0;
+}
+
+.languages button span {
+    font-size: 24px;
+}
+
+.languages__select {
+    width: 80%;
+    padding: 1vw;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    outline: 0;
+    background: rgb(0, 0, 10);
+    color: #e5f1ff;
+}

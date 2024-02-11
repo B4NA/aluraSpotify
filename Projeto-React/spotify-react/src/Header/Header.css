@@ -1,0 +1,58 @@
+.header {
+    top: 0;
+    padding: auto;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    background: var(--secondary-color);
+    border-bottom: 3px solid var(--border-color);
+}
+
+header.header div {
+    margin: auto;
+}
+
+img.logo-spotify {
+    height: 48px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    aspect-ratio: 1 \ 1;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: auto 0.8rem auto;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background: rgb(0, 0, 10);
+}
+
+.arrow img {
+    aspect-ratio: 1 / 1;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.search span {
+    margin: auto 0 auto;
+}
+
+.search__input {
+    border: 1px solid rgb(0, 0, 63);
+    outline: 1px solid rgb(0, 0, 126);
+    width: 25vw;
+    height: 30px;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

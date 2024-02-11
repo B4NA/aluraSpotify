@@ -1,0 +1,40 @@
+.footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    border-top: 3px solid var(--border-color);
+    background: repeating-linear-gradient(to right, rgb(0, 17, 255), black);
+}
+
+.footer div {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto 3%;
+    gap: 0.5vh;
+}
+
+.footer__title {
+    font-size: 2vw;
+}
+
+.footer__subtitle {
+    font-size: 1.5vw;
+}
+
+.footer button {
+    width: 10%;
+    height: 50%;
+    margin: auto 3% auto auto;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: var(--border-color);
+}
