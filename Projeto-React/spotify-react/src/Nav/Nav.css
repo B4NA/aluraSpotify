@@ -139,3 +139,9 @@ span.fa {
     background: rgb(0, 0, 10);
     color: #e5f1ff;
 }
+
+@media screen and (max-width: 1080px) {
+    .nav {
+        left: 0;
+    }
+}

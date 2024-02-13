@@ -2,42 +2,46 @@
 <div class="nav">
     <nav class="navigate">
         <ul>
-            <li><a href="{% url 'index' %}"><span class="fa fa-home" \><span class="margin__span">Início</span></a></li>
-            <li><a href="{% url 'login' %}"><span class="fa fa-key" \><span class="margin__span">Entrar</span></a></li>
-            <li><a href="{% url 'logon' %}"><span class="fa fa-pen" \><span class="margin__span">Cadastrar</span></a></li>
+            <li><a href="{% url 'index' 'pt' %}"><span class="fa fa-home" \><span class="margin__span">{{lang.4}}</span></a></li>
+            <li><a href="{% url 'login' %}"><span class="fa fa-key" \><span class="margin__span">{{lang.5}}</span></a></li>
+            <li><a href="{% url 'logon' %}"><span class="fa fa-pen" \><span class="margin__span">{{lang.6}}</span></a></li>
         </ul>
     </nav>
 </div>
-<div class="library nav">
+<div class="nav library">
     <nav class="library__nav navigate">
         <button class="library__button">
-            <span class="fa fa-book" \><span class="margin__span">Biblioteca</span>      
+            <span class="fa fa-book" \><span class="margin__span">{{lang.7}}</span>      
         </button>
         <button class="library__button" onclick="openSection()">
             <span id="signal" class="fa fa-plus" \>  
         </button>
     </nav>
     <section class="section-playlist">
-        <span class="text title">Crie sua primeira Playlist.</span>
-        <span class="text subtitle">É fácil, deixa eu te ajudar.</span>
+        <span class="text title">{{lang.8}}</span>
+        <span class="text subtitle">{{lang.9}}</span>
         <button class="section-playlist__button">
-            <span>Adicionar Playlist</span>
+            <span>{{lang.10}}</span>
         </button>
     </section>
     <div class="cookies">
-        <a href="">cookies</a>
+        <a href="">{{lang.11}}</a>
     </div>
     <div class="languages">
-        <button>
-            <a href="{% url 'index' %}"><span class="fa fa-globe" \></a>
+        <button onclick="redirect(false, true)">
+            <span class="fa fa-globe" \></a>
         </button>
         <select class="languages__select">
-            <option value="Portuguese">Português</option>
-            <option value="English">English</option>
-            <option value="Spanish">Español</option>
-            <option value="German">Deutsch</option>
-            <option value="Chinese">中文</option>
-            <option value="Japanese">日本語</option>
+            <option value="pt" {{lang.32}}>Português</option>
+            <option value="en" {{lang.33}}>English</option>
+            <option value="es" {{lang.34}}>Español</option>
+            <option value="it" {{lang.35}}>Italiano</option>
+            <option value="fr" {{lang.36}}>Français</option>
+            <option value="de" {{lang.37}}>Deutsch</option>
+            <option value="ru" {{lang.38}}>Русский</option>
+            <option value="zh" {{lang.39}}>中文</option>
+            <option value="ja" {{lang.40}}>日本語</option>
+            <option value="ko" {{lang.41}}>한국인</option>
         </select>
     </div>
 </div>

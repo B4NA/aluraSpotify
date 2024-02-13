@@ -1,7 +1,7 @@
 {% load static %}
 <header class="header">
     <div>
-        <a href="{% url 'index' %}"><img class='logo-spotify' src="{% static '/assets/icons/logo-spotify.png' %}"></a>
+        <a href="{% url 'index' 'pt' %}"><img class='logo-spotify' src="{% static '/assets/icons/logo-spotify.png' %}"></a>
     </div>
     <div class="search">
         <button class="arrow">
@@ -10,6 +10,6 @@
         <button class="arrow">
             <img class="flip" src="{% static '/assets/icons/small-left.png' %}">
         </button>
-        <button class="search__button" onclick="redirect(false)"><span class="fa fa-search" \></button><input onkeydown="redirect(true)" id='search-input' class="search__input" name="search__input" type="search" placeholder="Pesquisar">
+        <button class="search__button" onclick="redirect(false, false)"><span class="fa fa-search" \></button><input onkeydown="redirect(true, false)" id='search-input' class="search__input" name="search__input" type="search" placeholder="{{lang.3}}">
     </div>
 </header>

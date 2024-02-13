@@ -3,11 +3,18 @@
 {% block content %}
 <div class="main-container">
     <div class="result-main" id="result-main">
-        <h1 class="main__title">{{a}}</h1>
-        <h1 class="main__subtitle">Navegar por todas as seções</h1>
+        <h1 class="main__title">{{greet}}</h1>
+        <h1 class="main__subtitle">{{lang.12}}</h1>
         <div class="offer__scroll-container">
             <div class="offer__list">
                 <section class="offer__list-item">
+                {% for y in range %}
+                    <a class="cards" href="/cards/{{forloop.counter}}">
+                        <div class="cards card{{forloop.counter}}">
+                            <img src="{% static '/assets/playlist/' %}{{forloop.counter}}.jpeg"><span>{{y}}</span>
+                        </div>
+                    </a>
+                {% endfor %}
                 </section>
             </div>
         </div>
